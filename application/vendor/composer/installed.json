@@ -1,0 +1,78 @@
+[
+    {
+        "name": "codeigniter/framework",
+        "version": "3.1.7",
+        "version_normalized": "3.1.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bcit-ci/CodeIgniter.git",
+            "reference": "02a0518e1c56ba3506f370362ac5ebdb8a138312"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bcit-ci/CodeIgniter/zipball/02a0518e1c56ba3506f370362ac5ebdb8a138312",
+            "reference": "02a0518e1c56ba3506f370362ac5ebdb8a138312",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.7"
+        },
+        "require-dev": {
+            "mikey179/vfsstream": "1.1.*",
+            "phpunit/phpunit": "4.* || 5.*"
+        },
+        "suggest": {
+            "paragonie/random_compat": "Provides better randomness in PHP 5.x"
+        },
+        "time": "2018-01-13T11:57:11+00:00",
+        "type": "project",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "The CodeIgniter framework",
+        "homepage": "https://codeigniter.com"
+    },
+    {
+        "name": "chriskacerguis/codeigniter-restserver",
+        "version": "3.0.3",
+        "version_normalized": "3.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/chriskacerguis/codeigniter-restserver.git",
+            "reference": "3a5ba0dffdebd24cc215ef714b72208c88304203"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/chriskacerguis/codeigniter-restserver/zipball/3a5ba0dffdebd24cc215ef714b72208c88304203",
+            "reference": "3a5ba0dffdebd24cc215ef714b72208c88304203",
+            "shasum": ""
+        },
+        "require": {
+            "codeigniter/framework": "^3.0.4",
+            "php": ">=5.4.0"
+        },
+        "time": "2017-09-23T16:44:55+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "application/libraries/Format.php",
+                "application/libraries/REST_Controller.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Kacerguis",
+                "role": "Developer"
+            }
+        ],
+        "description": "REST Server for the CodeIgniter framework",
+        "homepage": "https://github.com/chriskacerguis/codeigniter-restserver"
+    }
+]
