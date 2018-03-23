@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Meu Cadastro</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <br><br>
+<ion-content>
+<ion-list padding>
+    <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input  [(ngModel)]="nomecliente"  type="text" ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>CPF</ion-label>
+        <ion-input  [(ngModel)]="cpf"  type="number" [maxlength]="11" ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text"  [(ngModel)]="email"  ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Endereço</ion-label>
+        <ion-input type="text" [(ngModel)]="endereco"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Cidade</ion-label>
+        <ion-input type="text" [(ngModel)]="municipio"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Estado</ion-label>
+        <ion-input type="text" [(ngModel)]="estado" [maxlength]="2" ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Telefone</ion-label>
+        <ion-input type="text" [(ngModel)]="telefone" [maxlength]="19" [minlength]="8" ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="senha" [maxlength]="19" [minlength]="6" ></ion-input>
+    </ion-item>
+    <br><br>
+
+    <button (click)="Gravar()" ion-button>Gravar </button>
+    <button (click)="Novo()" ion-button>Novo </button>
+    <button (click)="Excluir()" ion-button>Excluir </button>
+    
+</ion-list>
+</ion-content>

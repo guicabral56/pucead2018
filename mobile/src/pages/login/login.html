@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> <ion-icon name="log-in"></ion-icon> Autenticar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding="true">
+    
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input [(ngModel)]="Login" type="text" [maxlength]="55" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input [(ngModel)]="Senha" type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <button (click)="Entrar()" full ion-button>Entrar</button>
+  </ion-item>
+
+  <ion-item>
+    <button (click)="Cadastrar()" ion-button>Registrar</button>
+  </ion-item>
+
+<br>    
+  V.1.0.2
+</ion-list>
+</ion-content>
